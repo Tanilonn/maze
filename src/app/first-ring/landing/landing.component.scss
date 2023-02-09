@@ -5,8 +5,15 @@
     height: 100%;
 }
 
-h1{
+.hi{
     color: white;
+    top: 50%;
+    width: 100%;
     text-align: center;
-    padding-top: 25rem;
+    position: absolute;
+}
+
+.moon{
+    margin: 64px;
+    position: absolute;
 }
