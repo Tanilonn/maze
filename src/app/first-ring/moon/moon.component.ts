@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-moon',
@@ -7,7 +7,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class MoonComponent implements OnInit, OnDestroy {
   images : HTMLImageElement[] = [];
-  constructor() { }
+  constructor(private element: ElementRef) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +25,7 @@ export class MoonComponent implements OnInit, OnDestroy {
     console.log(img.style.top);
     this.images.push(img);
 
-    document.body.appendChild(img);
+    this.element.nativeElement.appendChild(img);
   }
 
   ngOnDestroy(): void {

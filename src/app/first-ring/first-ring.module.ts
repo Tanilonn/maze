@@ -6,11 +6,13 @@ import { MoonComponent } from './moon/moon.component';
 import { LandingComponent } from './landing/landing.component';
 import {MatInputModule} from '@angular/material/input'; 
 import { FormsModule } from '@angular/forms';
+import { HeatComponent } from './heat/heat.component';
 
 @NgModule({
   declarations: [
     MoonComponent,
-    LandingComponent
+    LandingComponent,
+    HeatComponent
   ],
   imports: [
     CommonModule,
