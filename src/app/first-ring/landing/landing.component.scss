@@ -1,0 +1,42 @@
+.body {
+    background-color: black !important;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.hi {
+    color: white;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.moon {
+    margin: 64px;
+    position: absolute;
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    margin: 112px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 1;
+    animation: fade 5s infinite;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
