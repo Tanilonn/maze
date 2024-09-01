@@ -15,6 +15,18 @@
     animation: fade 5s;
 }
 
+:host ::ng-deep .rubble {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(65, 45, 45);
+    opacity: 1;
+    animation: fade 5s;
+    transition: 0.5s ease-in-out;
+    transform: translate(10px,10px);
+}
+
 :host ::ng-deep.star {
     width: 20px;
     height: 20px;
@@ -36,6 +48,21 @@
     transition: 0.5s ease-in-out;
 }
 
+:host ::ng-deep.fading-sun {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0;
+    animation: fadeOut 5s;
+    transition: 0.5s ease-in-out;
+}
+
+:host ::ng-deep .orbit {
+    animation: orbit 5s linear infinite;
+}
+
 @keyframes fade {
 
     0% {
@@ -55,3 +82,7 @@
         opacity: 0
     }
 }
+@keyframes orbit {
+    from { transform:  rotate(0deg); }
+    to   { transform: rotate(360deg) rotate(-360deg); }
+  }
