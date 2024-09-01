@@ -1,0 +1,56 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card {
+    background-color: rgb(211, 228, 190);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+mat-card-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.linkedin {
+    color: #0a66c2;
+}
+
+.github {
+    color: #333;
+}
+
+mat-card-header .mat-icon {
+    font-size: 30px;
+    /* Adjust the size of the icon */
+    line-height: 0.3;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}

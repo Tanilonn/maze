@@ -1,0 +1,25 @@
+// Import Angular Material theming functions
+@import '~@angular/material/theming';
+
+// Define your soft green color palette
+$soft-green-primary: mat-palette($mat-green, 200, 100, 700);
+$soft-green-accent: mat-palette($mat-lime, 100, A100, A400);
+$soft-green-warn: mat-palette($mat-red, 100);
+
+// Create the theme object
+$soft-green-theme: mat-light-theme(
+  (
+    color: (
+      primary: $soft-green-primary,
+      accent: $soft-green-accent,
+      warn: $soft-green-warn,
+    ),
+    typography: mat-typography-config(),
+  )
+);
+
+// Include the Angular Material core styles
+@include mat-core();
+
+// Apply your theme to Angular Material components
+@include angular-material-theme($soft-green-theme);
