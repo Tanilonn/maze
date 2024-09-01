@@ -1,0 +1,42 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.card {
+    width: 700px;
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-image {
+    background-image: url('../../../assets/images/eva.jpg');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.linkedin {
+    color: #0a66c2;
+}
+
+.github {
+    color: #333;
+}
+
+mat-card-header .mat-icon {
+    font-size: 30px;  /* Adjust the size of the icon */
+    line-height: 0.3;
+  }
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
