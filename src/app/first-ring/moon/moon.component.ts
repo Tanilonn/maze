@@ -14,7 +14,7 @@ export class MoonComponent implements OnInit, OnDestroy {
 
   placeFlag() {
     const img = document.createElement("img");
-    img.src = '../../../assets/images/cheese-flag.png';
+    img.src = 'assets/images/cheese-flag.png';
     img.height = 100;
     img.alt = 'flag';
 
