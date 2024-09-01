@@ -9,14 +9,14 @@
 
     <span class="spacer"></span>
     <a href="https://github.com/Tanilonn">
-    <button mat-icon-button aria-label="Github icon" class="github">
-      <mat-icon class="fab fa-github"></mat-icon>
-    </button>
+      <button mat-icon-button aria-label="Github icon" class="github">
+        <mat-icon class="fab fa-github"></mat-icon>
+      </button>
     </a>
     <a href="https://www.linkedin.com/in/eva-van-der-scheer-9974a3193/" class="linkedin">
-    <button mat-icon-button aria-label="Linkedin icon">
-      <mat-icon class="fab fa-linkedin"></mat-icon>
-    </button>
+      <button mat-icon-button aria-label="Linkedin icon">
+        <mat-icon class="fab fa-linkedin"></mat-icon>
+      </button>
     </a>
   </mat-toolbar>
 </p>
@@ -68,42 +68,150 @@
 
   <mat-card class="card">
     <mat-card-header>
-      <div mat-card-avatar class="avatar">      
-        <mat-icon>school</mat-icon>
+      <div mat-card-avatar class="avatar">
+        <mat-icon color="primary">school</mat-icon>
       </div>
       <mat-card-title>Education</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        Haagse Hogeschool
-      </p>
+      <div class="content-item">
+        <h3 class="title"><b>Bachelor of Software Development</b></h3>
+        <p class="details">
+          The Hague University of Applied Sciences <br>
+          2018 - 2022
+        </p>
+      </div>
+      <div class="content-item">
+        <h3 class="title"><b>Azure Developer Associate</b></h3>
+        <p class="details">
+          AZ-204 Certificate
+        </p>
+      </div>
     </mat-card-content>
   </mat-card>
 
   <mat-card class="card">
     <mat-card-header>
-      <div mat-card-avatar class="avatar">      
-        <mat-icon>work</mat-icon>
+      <div mat-card-avatar class="avatar">
+        <mat-icon color="primary">work</mat-icon>
       </div>
       <mat-card-title>Experience</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        Quintor
+      <div class="content-item">
+        <h3 class="title"><b>.NET DevOps Engineer</b></h3>
+        <p class="details">
+          Quintor - Rabobank <br>
+          Jul 2022 - present
+        </p>
+        <ul class="experience-list">
+          <li>Quintor is a consultancy company, through which I’ve worked on various projects</li>
+          <li>Developed a .NET API that registers and determines hierarchies of Rabobank clients</li>
+          <li>Offered operational support, solved incidents, and implemented infrastructure as code</li>
+        </ul>
+      </div>
+      <div class="content-item">
+        <h3 class="title"><b>Full Stack Developer</b></h3>
+        <p class="details">
+          Quintor - Port of Amsterdam <br>
+          Jul 2022 - present
+        </p>
+        <ul class="experience-list">
+          <li>Worked on a web application and API for registering environmental taxes</li>
+          <li>Used Azure DevOps for building and deploying code</li>
+        </ul>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar">
+        <mat-icon color="primary">edit</mat-icon>
+      </div>
+      <mat-card-title>Projects</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p class="details">
+        During my studies and in my free time I've worked on several coding projects.
+        You can find and demo these in the portfolio section of this website.
       </p>
     </mat-card-content>
   </mat-card>
 
   <mat-card class="card">
     <mat-card-header>
-      <div mat-card-avatar class="avatar">      
-        <mat-icon>edit</mat-icon>
+      <div mat-card-avatar class="avatar">
+        <mat-icon color="primary">language</mat-icon>
       </div>
-      <mat-card-title>Projects</mat-card-title>
+      <mat-card-title>Languages</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        Hedy
+      <ul class="experience-list">
+        <li>Dutch (native)</li>
+        <li>English (fluent)</li>
+        <li>German (intermediate)</li>
+        <li>French (intermediate)</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar">
+        <mat-icon color="primary">code</mat-icon>
+      </div>
+      <mat-card-title>Tech stack</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="content-item">
+
+        <h3 class="title"><b>Languages and frameworks</b></h3>
+        <ul class="experience-list">
+          <li>.NET 8 / C#</li>
+          <li>Entity Framework </li>
+          <li>Javascript / Angular</li>
+          <li>HTML / CSS</li>
+          <li>SQL</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      <div class="content-item">
+        <h3 class="title"><b>CI/CD</b></h3>
+        <ul class="experience-list">
+          <li>Bicep</li>
+          <li>Nuke</li>
+          <li>Git / Github / Gitlab</li>
+          <li>Azure DevOps</li>
+        </ul>
+      </div>
+      <div class="content-item">
+        <h3 class="title"><b>Testing</b></h3>
+        <ul class="experience-list">
+          <li>XUnit</li>
+          <li>Selenium WebDriver </li>
+          <li>Specflow</li>
+        </ul>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar">
+        <mat-icon color="primary">book</mat-icon>
+      </div>
+      <mat-card-title>Hobbies</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p class="details">
+        During my free time I love to read books, do yoga, dance, and play (board) games. My current favorites include: <br><br>
+        ❤️ Mistborn (favorite book of 2024)<br>
+        ❤️ Animal Crossing<br>
+        ❤️ Genshin Impact<br>
+        ❤️ Modern dance<br>
+        ❤️ Pizza Marinara<br>
+        ❤️ Flamecraft (board game)<br>
       </p>
     </mat-card-content>
   </mat-card>

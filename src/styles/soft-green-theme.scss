@@ -2,8 +2,8 @@
 @import '~@angular/material/theming';
 
 // Define your soft green color palette
-$soft-green-primary: mat-palette($mat-green, 200, 100, 700);
-$soft-green-accent: mat-palette($mat-lime, 100, A100, A400);
+$soft-green-primary: mat-palette($mat-light-green, 300, 200, 700);
+$soft-green-accent: mat-palette($mat-lime, 300, 200, 400);
 $soft-green-warn: mat-palette($mat-red, 100);
 
 // Create the theme object
