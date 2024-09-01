@@ -1,6 +1,6 @@
 .spacer {
     flex: 1 1 auto;
-  }
+}
 
 .card {
     width: 700px;
@@ -30,9 +30,10 @@
 }
 
 mat-card-header .mat-icon {
-    font-size: 30px;  /* Adjust the size of the icon */
+    font-size: 30px;
+    /* Adjust the size of the icon */
     line-height: 0.3;
-  }
+}
 
 .avatar {
     display: flex;
@@ -40,3 +41,30 @@ mat-card-header .mat-icon {
     justify-content: center;
     align-items: center;
 }
+
+.content-item
+{
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+.details {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
