@@ -1,0 +1,83 @@
+/* Container to center content and give some padding */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for the loading message */
+  .loading-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Style for the Google Sign-In button */
+  .signin-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the error message */
+  .error-message {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c; /* Red color for errors */
+  }
+  
+  /* Style for the videos list */
+  .videos-list {
+    padding: 10px;
+  }
+  
+  .videos-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for each video item */
+  .video-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  /* Style for video thumbnail */
+  .thumbnail {
+    width: 120px;
+    height: 90px;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Style for video details */
+  .video-details {
+    flex: 1;
+  }
+  
+  .video-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .video-title:hover {
+    text-decoration: underline;
+  }
+  
+  .video-date {
+    color: #777;
+  }
+  
+  /* Style for no videos message */
+  .no-videos-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+  }
+  

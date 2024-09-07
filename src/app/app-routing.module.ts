@@ -23,6 +23,13 @@ const routes: Routes = [
         (m) => m.PortfolioOverviewModule
       ),
   },
+  {
+    path : 'youtube',
+    loadChildren: () =>
+      import('./youtube/youtube.module').then(
+        (m) => m.YoutubeModule
+      ),
+  },
 ];
 
 @NgModule({
