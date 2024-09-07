@@ -1,0 +1,33 @@
+<div class="container">
+    <div *ngIf="loading" class="loading-message">
+      <p>Login to see your videos</p>
+      <div id="google-signin-button" class="signin-button"></div> <!-- Google Sign-In button -->
+    </div>
+  
+    <div *ngIf="!loading && error" class="error-message">
+      <p>{{ error }}</p>
+      <button (click)="getYouTubeSubscriptions()">Retry</button>
+    </div>
+  
+    <div *ngIf="!loading && !error && recentVideos.length > 0" class="videos-list">
+      <h2>Recent Videos from Your Subscriptions</h2>
+      <button (click)="getYouTubeSubscriptions()">Refresh</button>
+      <ul>
+        <li *ngFor="let video of recentVideos" class="video-item">
+          <a [href]="'https://www.youtube.com/watch?v=' + video.id.videoId" target="_blank">
+            <img [src]="'https://img.youtube.com/vi/' + video.id.videoId + '/hqdefault.jpg'" alt="{{ video.snippet.title }}" class="thumbnail"/>
+            <div class="video-details">
+              <h3 class="video-title">{{ video.snippet.title }}</h3>
+              <p class="video-date">Published on: {{ video.snippet.publishedAt | date:'shortDate' }}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="!loading && !error && recentVideos.length === 0" class="no-videos-message">
+      <p>No recent videos found.</p>
+      <button (click)="getYouTubeSubscriptions()">Refresh</button>
+    </div>
+  </div>
+  

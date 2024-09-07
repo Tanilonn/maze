@@ -1,28 +1,35 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { YoutubeService } from '../shared/services/youtube.service';
+
 declare var google: any;
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-youtube',
+  templateUrl: './youtube.component.html',
+  styleUrls: ['./youtube.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class YoutubeComponent implements OnInit {
+  recentVideos: any[] = [];
+  loading: boolean = true; 
+  error: string | null = null;
 
+  constructor(private youtubeService: YoutubeService, private cdr: ChangeDetectorRef) { }
   CLIENT_ID = '500954188018-pl7ri0a7qbq1gd4gd71gaafkp4udf1n1.apps.googleusercontent.com';
   accessToken: string | null = null;
 
   tokenClient: any;
 
   ngOnInit(): void {
-    this.initializeGoogleSignIn();
   }
+
+  ngAfterViewInit(): void {
+      this.initializeGoogleSignIn();
+  }
+
   initializeGoogleSignIn() {
-    // First, initialize the sign-in process and render the button
-    // @ts-ignore
-    console.log('test');
     google.accounts.id.initialize({
       client_id: this.CLIENT_ID,
-      callback: this.handleCredentialResponse.bind(this), // Bind this to keep context
+      callback: this.handleCredentialResponse.bind(this),
     });
     console.log('Google Sign-In initialized');
 
@@ -31,7 +38,6 @@ export class HomeComponent implements OnInit {
       { theme: 'outline', size: 'large' }
     );
 
-    // Set up the token client for OAuth
     this.tokenClient = google.accounts.oauth2.initTokenClient({
       client_id: this.CLIENT_ID,
       scope: 'https://www.googleapis.com/auth/youtube.readonly',
@@ -50,8 +56,8 @@ export class HomeComponent implements OnInit {
     console.log('Access Token:', response.access_token);
     this.accessToken = response.access_token;
 
-    // Fetch YouTube subscriptions now that we have the access token
-    this.getYouTubeSubscriptions();
+    // Load user videos after signing in
+    this.loadRecentVideos();
   }
 
   getYouTubeSubscriptions() {
@@ -72,5 +78,26 @@ export class HomeComponent implements OnInit {
         console.log('YouTube Subscriptions:', data);
       })
       .catch(error => console.error('Error fetching YouTube subscriptions:', error));
+  }
+
+  loadRecentVideos(): void {
+    if (!this.accessToken) {
+      console.error('No access token found.');
+      return;
+    }
+    this.youtubeService.getRecentVideosFromSubscriptions(this.accessToken).subscribe(
+      videos => {
+        this.recentVideos = videos;
+        this.loading = false;
+        console.log('Recent Videos:', this.recentVideos);
+        this.cdr.detectChanges();
+      },
+      error => {
+        this.error = 'Error fetching recent videos';
+        this.loading = false;
+        this.cdr.detectChanges();
+        console.error('Error fetching recent videos:', error);
+      }
+    );
   }
 }
