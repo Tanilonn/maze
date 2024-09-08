@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { YoutubeService } from '../shared/services/youtube.service';
+import { firstValueFrom } from 'rxjs';
 
 declare var google: any;
 
@@ -80,24 +81,18 @@ export class YoutubeComponent implements OnInit {
       .catch(error => console.error('Error fetching YouTube subscriptions:', error));
   }
 
-  loadRecentVideos(): void {
-    if (!this.accessToken) {
-      console.error('No access token found.');
-      return;
+  async loadRecentVideos(this: any) {
+    try {
+      this.loading = true;
+      this.recentVideos = await firstValueFrom(this.youtubeService.getRecentVideosFromSubscriptions(this.accessToken));
+      console.log('Recent Videos:', this.recentVideos);
+    } catch (error) {
+      this.error = 'Error fetching recent videos';
+      console.error('Error fetching recent videos:', error);
+    } finally {
+      this.loading = false;
+      this.cdr.detectChanges();
     }
-    this.youtubeService.getRecentVideosFromSubscriptions(this.accessToken).subscribe(
-      videos => {
-        this.recentVideos = videos;
-        this.loading = false;
-        console.log('Recent Videos:', this.recentVideos);
-        this.cdr.detectChanges();
-      },
-      error => {
-        this.error = 'Error fetching recent videos';
-        this.loading = false;
-        this.cdr.detectChanges();
-        console.error('Error fetching recent videos:', error);
-      }
-    );
   }
+  
 }

@@ -30,38 +30,53 @@
     </mat-card-header>
     <mat-card-content>
       <p>
-        👋 Hallo! Mijn naam is Eva. In juni 2022 ben ik afgestudeerd als software developer aan de Haagse Hogeschool.
-        Sindsdien ben ik werkzaam bij Quintor als .NET consultant.
+        👋 Hi! I'm Eva. In June 2022 I graduated with a bachelor in Software Development from the Hague University of
+        Applied Sciences.
+        Ever since I've been working as a .NET consultant at Quintor.
+      </p>
+      <br>
+      <p>
+        💼 <strong>My key skills include:</strong>
       </p>
       <p>
-        💼 Mijn vaardigheden zijn onder andere:
+        ✅ <strong>Agile Software Development</strong>: I thrive in agile, interdisciplinary teams, actively engaging in
+        every phase of the software development
+        lifecycle. This includes refining work items, participating in iterative development, and overseeing continuous
+        integration and deployment. I am skilled in setting up and optimizing pipelines, conducting thorough testing,
+        and delivering clear demos.
       </p>
       <p>
-        ✅ Backend Development: Zowel op school als tijdens mijn derdejaars stage en afstuderen heb ik gewerkt met .NET
-        voor backend developement. Ik ben ervaren met het bouwen van .NET oplossingen en het onderhouden en updaten van
-        bestaande applicaties. Hierbij heb ik veel aandacht voor code kwaliteit en testen.
+        ✅ <strong>Backend Development</strong>: During both my internships as well as at my current job I've used .NET
+        for backend developement. I am experienced in building .NET solutions and maintaining and updating existing
+        applications. To ensure high-quality code, I use design patterns and adhere to SOLID principles, utilize
+        Test-Driven Development (TDD), and implement automated testing.
       </p>
       <p>
-        ✅ Databases (SQL): Bij een backend komt vrijwel altijd een database kijken. Ik heb ervaring met het code-first
-        ontwerpen van databases met Entity Framework, het ontwerpen en onderhouden van databaseschema's en het schrijven
-        en optimaliseren van SQL query's. Ook heb ik ervaring met Azure Storage.
+        ✅ <strong>Databases (SQL)</strong>: A backend needs a database. I have experience in both database-first and
+        code-first database
+        design, as well as using Entity Framework, designing and maintaining database schemas, and writing and
+        optimizing SQL
+        queries. I also have experience with Azure Storage.
       </p>
       <p>
-        ✅ Front-end Development: Hoewel mijn ervaring voornamelijk ligt in backend development heb ik daarbij ook altijd
-        gewerkt met een (Angular) front-end en kan ik me daar dan ook goed een weg in vinden. Uiteraard gaat dit altijd
-        samen met goede unit en integratie testen.
+        ✅ <strong>Front-end Development</strong>: Although my primary focus has been on backend development I am also
+        well versed in
+        creating and maintaining front-end applications using Javascript or Angular and really enjoy the process of
+        designing these. Of course this is always paired with good testing, ideally using a WebDriver like Selenium.
       </p>
       <p>
-        ✅ Testen: Voor het verzekeren van kwalitatief sterke en onderhoudbare code maak ik gebruik van verschillende
-        vormen van testen. Ik heb ervaring met verschillende test frameworks waaronder xUnit, NUnit, Karma & Jasmine.
+        ✅ <strong>Testing</strong>: To ensure high-quality and maintainable code, I use various forms of testing. I have
+        experience with
+        different test frameworks including xUnit, NUnit, Karma & Jasmine.
       </p>
       <p>
-        ✅ Azure: Vorig jaar heb ik het Azure Developer Associate certificaat behaald. In de praktijk heb ik ervaring met
-        Azure Devops en verschillende cloud services.
+        ✅ <strong>Azure</strong>: I have obtained the Azure Developer Associate certification. In practice, I have
+        experience with
+        Azure DevOps and various cloud services.
       </p>
       <p>
-        🌼 Ik zet me graag in voor een betere wereld en hou me in mijn vrije tijd veel bezig met klimaat en
-        duurzaamheid. Daarnaast hou ik van lezen en dansen.
+        🌼 I am committed to creating a better world and I'm passionate about topics like climate, sustainability and
+        human rights.
       </p>
     </mat-card-content>
   </mat-card>
@@ -99,26 +114,36 @@
     </mat-card-header>
     <mat-card-content>
       <div class="content-item">
-        <h3 class="title"><b>.NET DevOps Engineer</b></h3>
+        <h3 class="title"><b>Consultant</b></h3>
         <p class="details">
-          Quintor - Rabobank <br>
-          Jul 2022 - present
+          Quintor <br>
+          July 2022 - present
         </p>
         <ul class="experience-list">
-          <li>Quintor is a consultancy company, through which I’ve worked on various projects</li>
-          <li>Developed a .NET API that registers and determines hierarchies of Rabobank clients</li>
-          <li>Offered operational support, solved incidents, and implemented infrastructure as code</li>
+          <li>As a consultant at Quintor, I have contributed to various small-scale projects and two major assignments detailed below.</li>
+          <li>Participated in a masterclass designed to integrate young professionals into the workplace.</li>
         </ul>
       </div>
       <div class="content-item">
-        <h3 class="title"><b>Full Stack Developer</b></h3>
+        <h3 class="title"><b>.NET DevOps Engineer</b></h3>
         <p class="details">
-          Quintor - Port of Amsterdam <br>
-          Jul 2022 - present
+          Quintor - Rabobank <br>
+          February 2024 - present
         </p>
         <ul class="experience-list">
-          <li>Worked on a web application and API for registering environmental taxes</li>
-          <li>Used Azure DevOps for building and deploying code</li>
+          <li>Developed and maintained a .NET API utilized by credit analysts to identify and register credit risk hierarchies for clients.</li>
+          <li>Provided operational support, resolved incidents, and implemented Infrastructure as Code (IaC) to enhance system reliability and scalability.</li>
+        </ul>
+      </div>
+      <div class="content-item">
+        <h3 class="title"><b>Full Stack Developer (Angular/.NET)</b></h3>
+        <p class="details">
+          Quintor - Port of Amsterdam <br>
+          November 2022 - August 2023
+        </p>
+        <ul class="experience-list">
+          <li>Developed a web application using Angular and a .NET API for managing environmental tax registrations.</li>
+          <li>Leveraged Azure DevOps for continuous integration and deployment.</li>
         </ul>
       </div>
     </mat-card-content>
@@ -134,7 +159,7 @@
     <mat-card-content>
       <p class="details">
         During my studies and in my free time I've worked on several coding projects.
-        You can find and demo these in the portfolio section of this website.
+        You can find and demo these in the <a [routerLink]="['/portfolio']">portfolio</a> section of this website.
       </p>
     </mat-card-content>
   </mat-card>
@@ -170,7 +195,8 @@
         <ul class="experience-list">
           <li>.NET 8 / C#</li>
           <li>Entity Framework </li>
-          <li>Javascript / Angular</li>
+          <li>LinQ</li>
+          <li>Javascript / Typescript / Angular</li>
           <li>HTML / CSS</li>
           <li>SQL</li>
           <li>Java</li>
@@ -183,14 +209,29 @@
           <li>Nuke</li>
           <li>Git / Github / Gitlab</li>
           <li>Azure DevOps</li>
+          <li>Docker</li>
+          <li>SonarQube</li>
+          <li>Atlassian Jira</li>
         </ul>
       </div>
       <div class="content-item">
         <h3 class="title"><b>Testing</b></h3>
         <ul class="experience-list">
-          <li>XUnit</li>
+          <li>XUnit / NUnit / Moq</li>
           <li>Selenium WebDriver </li>
+          <li>Karma / Jasmine </li>
           <li>Specflow</li>
+        </ul>
+      </div>
+      <div class="content-item">
+        <h3 class="title"><b>Azure</b></h3>
+        <ul class="experience-list">
+          <li>DevOps</li>
+          <li>App Service</li>
+          <li>Storage Accounts</li>
+          <li>SQL Server</li>
+          <li>Application Insights</li>
+          <li>WebJobs</li>
         </ul>
       </div>
     </mat-card-content>
@@ -205,13 +246,15 @@
     </mat-card-header>
     <mat-card-content>
       <p class="details">
-        During my free time I love to read books, do yoga, dance, and play (board) games. My current favorites include: <br><br>
+        During my free time I love to read books, do yoga, dance, and play (board) games. My current favorites include:
+        <br><br>
         ❤️ Mistborn (favorite book of 2024)<br>
         ❤️ Animal Crossing<br>
         ❤️ Genshin Impact<br>
         ❤️ Modern dance<br>
         ❤️ Pizza Marinara<br>
         ❤️ Flamecraft (board game)<br>
+        ❤️ Crochet<br>
       </p>
     </mat-card-content>
   </mat-card>
