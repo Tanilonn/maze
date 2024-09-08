@@ -14,8 +14,9 @@
 
 .card {
     background-color: rgb(211, 228, 190);
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,8 +52,11 @@ mat-card-title {
 
 mat-card-header .mat-icon {
     font-size: 30px;
-    /* Adjust the size of the icon */
     line-height: 0.3;
+}
+
+a .mat-icon {
+    line-height: 0.9;
 }
 
 .avatar {
