@@ -29,21 +29,28 @@
     color: #333;
 }
 
-mat-card-header .mat-icon {
-    font-size: 30px;
-    /* Adjust the size of the icon */
-    line-height: 0.3;
+mat-card-header {
+    display: flex;
+    align-items: center;
 }
 
 .avatar {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
 }
 
-.content-item
-{
+.avatar mat-icon {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.card-title {
+    margin-bottom: 12px;
+}
+
+
+.content-item {
     margin-bottom: 16px;
 }
 
@@ -75,4 +82,4 @@ p {
     font-size: 1rem;
     color: #666;
     margin: 0;
-  }
+}
