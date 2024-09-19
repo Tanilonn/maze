@@ -1,25 +1,28 @@
-<p>
-  <mat-toolbar color="primary">
-    <button mat-button routerLink="/">
-      Home
-    </button>
-    <button mat-button routerLink="/portfolio">
-      Portfolio
-    </button>
+<mat-toolbar color="primary">
+  <button mat-button routerLink="/">
+    Home
+  </button>
+  <button mat-button routerLink="/portfolio">
+    Portfolio
+  </button>
 
-    <span class="spacer"></span>
-    <a href="https://github.com/Tanilonn">
-      <button mat-icon-button aria-label="Github icon" class="github">
-        <mat-icon class="fab fa-github"></mat-icon>
-      </button>
-    </a>
-    <a href="https://www.linkedin.com/in/eva-van-der-scheer-9974a3193/" class="linkedin">
-      <button mat-icon-button aria-label="Linkedin icon">
-        <mat-icon class="fab fa-linkedin"></mat-icon>
-      </button>
-    </a>
-  </mat-toolbar>
-</p>
+  <span class="spacer"></span>
+  <button mat-icon-button class="language-button" (click)="toggleLanguage()">
+    <span class="fi fi-{{ getLanguage() === 'en' ? 'nl' : 'us' }}"></span>
+  </button>
+
+  <a href="https://github.com/Tanilonn">
+    <button mat-icon-button aria-label="Github icon" class="github">
+      <mat-icon class="fab fa-github"></mat-icon>
+    </button>
+  </a>
+  <a href="https://www.linkedin.com/in/eva-van-der-scheer-9974a3193/" class="linkedin">
+    <button mat-icon-button aria-label="Linkedin icon">
+      <mat-icon class="fab fa-linkedin"></mat-icon>
+    </button>
+  </a>
+</mat-toolbar>
+
 
 <div class="container">
   <mat-card class="card">
@@ -30,53 +33,31 @@
     </mat-card-header>
     <mat-card-content>
       <p>
-        👋 Hi! I'm Eva. In June 2022 I graduated with a bachelor in Software Development from the Hague University of
-        Applied Sciences.
-        Ever since I've been working as a .NET consultant at Quintor.
-      </p>
-      <br>
-      <p>
-        💼 <strong>My key skills include:</strong>
+        {{'intro' | translate}}
       </p>
       <p>
-        ✅ <strong>Agile Software Development</strong>: I thrive in agile, interdisciplinary teams, actively engaging in
-        every phase of the software development
-        lifecycle. This includes refining work items, participating in iterative development, and overseeing continuous
-        integration and deployment. I am skilled in setting up and optimizing pipelines, conducting thorough testing,
-        and delivering clear demos.
+        💼 <strong>{{'key-skills' | translate}}</strong>
       </p>
       <p>
-        ✅ <strong>Backend Development</strong>: During both my internships as well as at my current job I've used .NET
-        for backend developement. I am experienced in building .NET solutions and maintaining and updating existing
-        applications. To ensure high-quality code, I use design patterns and adhere to SOLID principles, utilize
-        Test-Driven Development (TDD), and implement automated testing.
+        ✅ <strong>Agile Software Development</strong>: {{'agile' | translate}}
       </p>
       <p>
-        ✅ <strong>Databases (SQL)</strong>: A backend needs a database. I have experience in both database-first and
-        code-first database
-        design, as well as using Entity Framework, designing and maintaining database schemas, and writing and
-        optimizing SQL
-        queries. I also have experience with Azure Storage.
+        ✅ <strong>Backend Development</strong>: {{'backend' | translate}}
       </p>
       <p>
-        ✅ <strong>Front-end Development</strong>: Although my primary focus has been on backend development I am also
-        well versed in
-        creating and maintaining front-end applications using Javascript or Angular and really enjoy the process of
-        designing these. Of course this is always paired with good testing, ideally using a WebDriver like Selenium.
+        ✅ <strong>Databases (SQL)</strong>: {{'databases' | translate}}
       </p>
       <p>
-        ✅ <strong>Testing</strong>: To ensure high-quality and maintainable code, I use various forms of testing. I have
-        experience with
-        different test frameworks including xUnit, NUnit, Karma & Jasmine.
+        ✅ <strong>Front-end Development</strong>: {{'frontend' | translate}}
       </p>
       <p>
-        ✅ <strong>Azure</strong>: I have obtained the Azure Developer Associate certification. In practice, I have
-        experience with
-        Azure DevOps and various cloud services.
+        ✅ <strong>Testing</strong>: {{'testing' | translate}}
       </p>
       <p>
-        🌼 I am committed to creating a better world and I'm passionate about topics like climate, sustainability and
-        human rights.
+        ✅ <strong>Azure</strong>: {{'azure' | translate}}
+      </p>
+      <p>
+        {{'world' | translate}}
       </p>
     </mat-card-content>
   </mat-card>
@@ -86,13 +67,13 @@
       <div mat-card-avatar class="avatar">
         <mat-icon color="primary">school</mat-icon>
       </div>
-      <mat-card-title>Education</mat-card-title>
+      <mat-card-title class="card-title">{{'education.title' | translate}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <div class="content-item">
         <h3 class="title"><b>Bachelor of Software Development</b></h3>
         <p class="details">
-          The Hague University of Applied Sciences <br>
+          {{'education.school' | translate}}<br>
           2018 - 2022
         </p>
       </div>
@@ -110,40 +91,40 @@
       <div mat-card-avatar class="avatar">
         <mat-icon color="primary">work</mat-icon>
       </div>
-      <mat-card-title>Experience</mat-card-title>
+      <mat-card-title class="card-title">{{'experience.title' | translate}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <div class="content-item">
         <h3 class="title"><b>Consultant</b></h3>
         <p class="details">
           Quintor <br>
-          July 2022 - present
+          {{'experience.consultant.date' | translate}}
         </p>
         <ul class="experience-list">
-          <li>As a consultant at Quintor, I have contributed to various small-scale projects and two major assignments detailed below.</li>
-          <li>Participated in a masterclass designed to integrate young professionals into the workplace.</li>
+          <li>{{'experience.consultant.bullet1' | translate}}</li>
+          <li>{{'experience.consultant.bullet2' | translate}}</li>
         </ul>
       </div>
       <div class="content-item">
         <h3 class="title"><b>.NET DevOps Engineer</b></h3>
         <p class="details">
           Quintor - Rabobank <br>
-          February 2024 - present
+          {{'experience.devops.date' | translate}}
         </p>
         <ul class="experience-list">
-          <li>Developed and maintained a .NET API utilized by credit analysts to identify and register credit risk hierarchies for clients.</li>
-          <li>Provided operational support, resolved incidents, and implemented Infrastructure as Code (IaC) to enhance system reliability and scalability.</li>
+          <li>{{'experience.devops.bullet1' | translate}}</li>
+          <li>{{'experience.devops.bullet2' | translate}}</li>
         </ul>
       </div>
       <div class="content-item">
         <h3 class="title"><b>Full Stack Developer (Angular/.NET)</b></h3>
         <p class="details">
           Quintor - Port of Amsterdam <br>
-          November 2022 - August 2023
+          {{'experience.fullstack.date' | translate}}
         </p>
         <ul class="experience-list">
-          <li>Developed a web application using Angular and a .NET API for managing environmental tax registrations.</li>
-          <li>Leveraged Azure DevOps for continuous integration and deployment.</li>
+          <li>{{'experience.fullstack.bullet1' | translate}}</li>
+          <li>{{'experience.fullstack.bullet2' | translate}}</li>
         </ul>
       </div>
     </mat-card-content>
@@ -154,12 +135,11 @@
       <div mat-card-avatar class="avatar">
         <mat-icon color="primary">edit</mat-icon>
       </div>
-      <mat-card-title>Projects</mat-card-title>
+      <mat-card-title class="card-title">{{'projects.title' | translate}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <p class="details">
-        During my studies and in my free time I've worked on several coding projects.
-        You can find and demo these in the <a [routerLink]="['/portfolio']">portfolio</a> section of this website.
+        {{'projects.part1' | translate}} <a [routerLink]="['/portfolio']">portfolio</a> {{'projects.part2' | translate}}
       </p>
     </mat-card-content>
   </mat-card>
@@ -169,14 +149,14 @@
       <div mat-card-avatar class="avatar">
         <mat-icon color="primary">language</mat-icon>
       </div>
-      <mat-card-title>Languages</mat-card-title>
+      <mat-card-title class="card-title">{{'languages.title' | translate}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <ul class="experience-list">
-        <li>Dutch (native)</li>
-        <li>English (fluent)</li>
-        <li>German (intermediate)</li>
-        <li>French (intermediate)</li>
+        <li>{{'languages.dutch' | translate}}</li>
+        <li>{{'languages.english' | translate}}</li>
+        <li>{{'languages.french' | translate}}</li>
+        <li>{{'languages.german' | translate}}</li>
       </ul>
     </mat-card-content>
   </mat-card>
@@ -186,7 +166,7 @@
       <div mat-card-avatar class="avatar">
         <mat-icon color="primary">code</mat-icon>
       </div>
-      <mat-card-title>Tech stack</mat-card-title>
+      <mat-card-title class="card-title">Tech stack</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <div class="content-item">
@@ -242,19 +222,19 @@
       <div mat-card-avatar class="avatar">
         <mat-icon color="primary">book</mat-icon>
       </div>
-      <mat-card-title>Hobbies</mat-card-title>
+      <mat-card-title class="card-title">{{'hobbies.title' | translate}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <p class="details">
-        During my free time I love to read books, do yoga, dance, and play (board) games. My current favorites include:
+        {{'hobbies.intro' | translate}}
         <br><br>
         ❤️ Mistborn (favorite book of 2024)<br>
         ❤️ Animal Crossing<br>
         ❤️ Genshin Impact<br>
-        ❤️ Modern dance<br>
+        ❤️ {{'hobbies.modern' | translate}}<br>
         ❤️ Pizza Marinara<br>
         ❤️ Flamecraft (board game)<br>
-        ❤️ Crochet<br>
+        ❤️ {{'hobbies.crochet' | translate}}<br>
       </p>
     </mat-card-content>
   </mat-card>

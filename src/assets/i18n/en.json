@@ -1,0 +1,52 @@
+{
+    "intro": "👋 Hi! I'm Eva. In June 2022 I graduated with a bachelor in Software Development from the Hague University of Applied Sciences. Ever since I've been working as a .NET consultant at Quintor.",
+    "key-skills": "My key skills include:",
+    "agile": "I thrive in agile, interdisciplinary teams, actively engaging in every phase of the software development lifecycle. This includes refining work items, participating in iterative development, and overseeing continuous integration and deployment. I am skilled in setting up and optimizing pipelines, conducting thorough testing, and delivering clear demos.",
+    "backend": "During both my internships as well as at my current job I've used .NET for backend developement. I am experienced in building .NET solutions and maintaining and updating existing applications. To ensure high-quality code, I use design patterns and adhere to SOLID principles, utilize Test-Driven Development (TDD), and implement automated testing.",
+    "databases": "A backend needs a database. I have experience in both database-first and code-first database design, as well as using Entity Framework, designing and maintaining database schemas, and writing and optimizing SQL queries. I also have experience with Azure Storage.",
+    "frontend": "Although my primary focus has been on backend development I am also well versed in creating and maintaining front-end applications using Javascript or Angular and really enjoy the process of designing these. Of course this is always paired with good testing, ideally using a WebDriver like Selenium.",
+    "testing": "To ensure high-quality and maintainable code, I use various forms of testing. I have experience with different test frameworks including xUnit, NUnit, Karma & Jasmine.",
+    "azure": " I have obtained the Azure Developer Associate certification. In practice, I have experience with Azure DevOps and various cloud services.",
+    "world": "🌼 I am committed to creating a better world and I'm passionate about topics like climate, sustainability and human rights.",
+    "education": {
+        "title": "Education",
+        "school": "The Hague University of Applied Sciences"
+    },
+    "experience": {
+        "title": "Experience",
+        "consultant": {
+            "date": " July 2022 - present",
+            "bullet1": "As a consultant at Quintor, I have contributed to various small-scale projects and two major assignments detailed below.",
+            "bullet2": "Participated in a masterclass designed to integrate young professionals into the workplace."
+        },
+        "devops": {
+            "date": "February 2024 - present",
+            "bullet1": "Developed and maintained a .NET API utilized by credit analysts to identify and register credit risk hierarchies for clients.",
+            "bullet2": "Provided operational support, resolved incidents, and implemented Infrastructure as Code (IaC) to enhance system reliability and scalability."
+        },
+        "fullstack": {
+            "date": "November 2022 - August 2023",
+            "bullet1": "Developed a web application using Angular and a .NET API for managing environmental tax registrations. ",
+            "bullet2": "Leveraged Azure DevOps for continuous integration and deployment."
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "part1": "During my studies and in my free time I've worked on several coding projects. You can find and demo these in the",
+        "part2": "section of this website."
+    },
+    "languages": {
+        "title": "Talen",
+        "dutch": "Dutch (native)",
+        "english": "English (fluent)",
+        "french": "French (intermediate)",
+        "german": "German (intermediate)"
+    },
+    "hobbies": {
+        "title": "Hobbies",
+        "intro": "During my free time I love to read books, do yoga, dance, and play (board) games. My current favorites include: ",
+        "modern": "Modern dance",
+        "crochet": "Crochet"
+    }
+
+}
