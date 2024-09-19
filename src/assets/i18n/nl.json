@@ -1,3 +1,52 @@
 {
-    "intro":"👋 Hi! Ik ben Eva. In juni 2022 ben ik afgestudeerd aan de Haagse Hogeschool in de richting Software Development. Sindsdien ben ik aan het werk als .NET consultant bij Quintor."
+    "intro":"👋 Hi! Ik ben Eva. In juni 2022 ben ik afgestudeerd aan de Haagse Hogeschool in de richting Software Development. Sindsdien ben ik aan het werk als .NET consultant bij Quintor.",
+    "key-skills": "Mijn vaardigheden zijn onder andere:",
+    "agile": "Ik werk goed in agile, interdisciplinaire teams en ben dan actief betrokken bij elke fase van de softwareontwikkelingscyclus. Zoals het verfijnen van werkitems, iteratieve development en het faciliteren van continuous integration and deployment. Ik ben bedreven in het opzetten en optimaliseren van pipelines, het uitvoeren en automatiseren van tests en het geven van duidelijke demo’s.",
+    "backend": "Zowel op school als tijdens mijn derdejaars stage en afstuderen heb ik gewerkt met .NET voor backend developement. Ik ben ervaren met het bouwen van .NET oplossingen en het onderhouden en updaten van bestaande applicaties. Hierbij heb ik veel aandacht voor code kwaliteit en testen.",
+    "databases": "Bij een backend komt vrijwel altijd een database kijken. Ik heb ervaring met het code-first ontwerpen van databases met Entity Framework, het ontwerpen en onderhouden van databaseschema's en het schrijven en optimaliseren van SQL query's. Ook heb ik ervaring met Azure Storage.",
+    "frontend": "Hoewel mijn ervaring voornamelijk ligt in backend development heb ik daarbij ook altijd gewerkt met een (Angular) front-end en kan ik me daar dan ook goed een weg in vinden. Uiteraard gaat dit altijd samen met goede unit en integratie testen.",
+    "testing": "Voor het verzekeren van kwalitatief sterke en onderhoudbare code maak ik gebruik van verschillende vormen van testen. Ik heb ervaring met verschillende test frameworks waaronder xUnit, NUnit, Karma & Jasmine.",
+    "azure": "Vorig jaar heb ik het Azure Developer Associate certificaat behaald. In de praktijk heb ik ervaring met Azure Devops en verschillende cloud services.",
+    "world": "🌼 Ik zet me graag in voor een betere wereld en hou me in mijn vrije tijd veel bezig met klimaat en duurzaamheid.",
+    "education": {
+        "title": "Educatie",
+        "school": "De Haagse Hogeschool"
+    },
+    "experience": {
+        "title": "Ervaring",
+        "consultant": {
+            "date": "Juli 2022 - heden",
+            "bullet1": "Als consultant bij Quintor heb ik bijgedragen aan verschillende kleinschalige projecten en twee langere opdrachten die hieronder worden toegelicht.",
+            "bullet2": "Deelgenomen aan een masterclass die was ontworpen om jonge professionals te integreren in de werkomgeving."
+        },
+        "devops": {
+            "date": "Februari 2024 - heden",
+            "bullet1": "Ontwikkelen en onderhouden van een .NET API die door kredietanalisten wordt gebruikt om kredietrisico-hiërarchieën voor klanten te identificeren en te registreren.",
+            "bullet2": "Operationele ondersteuning bieden, incidenten oplossen en Infrastructure as Code (IaC) geïmplementeerd om de systeembetrouwbaarheid en schaalbaarheid te verbeteren."
+        },
+        "fullstack": {
+            "date": "November 2022 - augustus 2023",
+            "bullet1": "Ontwikkelen van een webapplicatie met Angular en een .NET API voor het beheren van milieu belastingregistraties.",
+            "bullet2": "Gebruik gemaakt van Azure DevOps voor continuous integration and deployment."
+        }
+    },
+    "projects": {
+        "title": "Projecten",
+        "part1": "Tijdens mijn opleiding en in mijn vrije tijd heb ik aan verschillende projecten gewerkt. Deze zijn te vinden in de ",
+        "part2": "sectie van deze website."
+    },
+    "languages": {
+        "title": "Talen",
+        "dutch": "Nederlands (moedertaal)",
+        "english": "Engels (vloeiend)",
+        "french": "Frans (gevorderd)",
+        "german": "Duits (gevorderd)"
+    },
+    "hobbies": {
+        "title": "Hobby's",
+        "intro": "In mijn vrije tijd lees ik graag, doe ik yoga, moderne dans en speel ik (bord-)spellen. Mijn favorieten zijn momenteel:",
+        "modern": "Moderne dans",
+        "crochet": "Haken"
+    }
+
 }

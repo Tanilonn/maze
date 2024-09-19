@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private translateService: TranslateService) {
     translateService.setDefaultLang('en');
-    translateService.use(localStorage.getItem('lang') || 'en')
+    translateService.use(localStorage.getItem('language') || 'en')
     this.currentLang = localStorage.getItem('language') || 'en';
   }
 
