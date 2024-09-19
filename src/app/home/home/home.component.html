@@ -7,10 +7,10 @@
   </button>
 
   <span class="spacer"></span>
-  <button mat-icon-button (click)="toggleLanguage()">
-    <mat-icon>{{ getLanguage() === 'en' ? 'flag_nl' : 'flag_en' }}</mat-icon>
+  <button mat-icon-button class="language-button" (click)="toggleLanguage()">
+    <span class="fi fi-{{ getLanguage() === 'en' ? 'nl' : 'us' }}"></span>
   </button>
-  
+
   <a href="https://github.com/Tanilonn">
     <button mat-icon-button aria-label="Github icon" class="github">
       <mat-icon class="fab fa-github"></mat-icon>
