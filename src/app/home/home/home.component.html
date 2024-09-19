@@ -7,6 +7,10 @@
   </button>
 
   <span class="spacer"></span>
+  <button mat-icon-button (click)="toggleLanguage()">
+    <mat-icon>{{ getLanguage() === 'en' ? 'flag_nl' : 'flag_en' }}</mat-icon>
+  </button>
+  
   <a href="https://github.com/Tanilonn">
     <button mat-icon-button aria-label="Github icon" class="github">
       <mat-icon class="fab fa-github"></mat-icon>
@@ -29,9 +33,7 @@
     </mat-card-header>
     <mat-card-content>
       <p>
-        👋 Hi! I'm Eva. In June 2022 I graduated with a bachelor in Software Development from the Hague University of
-        Applied Sciences.
-        Ever since I've been working as a .NET consultant at Quintor.
+        {{'intro' | translate}}
       </p>
       <p>
         💼 <strong>My key skills include:</strong>
